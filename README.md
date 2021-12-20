@@ -9,22 +9,21 @@ Instructions:-
 
 `python clean_whatsapp_chats.py whatsapp_chat.txt`
 
-3. Run the prepare_files.ipynb ipython notebook.
+3. Run the prepare_files.py script to create embeddings from cleaned chat.
 
-4. Run the Me_Bot.ipynb file and you can play with the bot at the bottom!
+4. Run the predict.py file and and edit to play with the bot at the bottom!
 
-NOTE - Actively seeking collaborators for fun side projects like this. If you're itnerested, please drop me a mail at smadan@mit.edu
+To use django app for a rest api experience:
 
-## For wechat user:
-Wechat chat history is save in SQLite Database, therefore you need to export from you Phone.
-Basically, if you have a iPhone, there are the steps to get the database file:
-1. Use iTunes to backup your phone (unselect encrypt backup)
-2. Use iTools to open the backup file and get a copy of your database file named MM.sqlite
-3. run `python clean_wechat_chats.py YOUR_DATABASE_PATH YOUR_FRIEND_ID`
+Note: Python 3.6 and Linux based machine are core requirements.
 
-Find more detail information about this [here](https://www.cnblogs.com/cxun/p/5677606.html)
+1. Create a virtual environment and use:
 
-![MM.sqlite](https://github.com/DH-Diego/Me_Bot/blob/master/pictures/MM.sqlite.png)
+`pip install -r requirements.txt`
 
-This is the database, each table starts with 'Chat_' corresponding to a chat history with a friend,  you need to find the table id you want to generate the chat robot to run the script above. Currently only English chat is supported, Chinese version is under constructing.
+2. Run a django server using:
+
+`python manage.py runserver`
+
+Note: A pretrained chat model has been included for testing. Use your model after cleaning and preparing files (instructions stated above) using the same directory structure in "res" folder.
 
