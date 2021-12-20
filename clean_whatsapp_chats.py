@@ -10,8 +10,8 @@ all_text = []
 your_sents = []
 other_sents = []
 
-YOUR_NAME = 'YOUR NAME HERE'
-OTHER_NAME = 'OTHER NAME HERE'
+YOUR_NAME = 'Kritanjali'
+OTHER_NAME = 'Tushar Nankani'
 
 prev_pr_to_sp = {}
 prev = None
